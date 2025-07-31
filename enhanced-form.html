@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced HTML5 Page with Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f5f5f5;
+    }
+    section {
+      background-color: #fff;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 0.8rem;
+      text-align: left;
+    }
+    fieldset {
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 6px;
+    }
+    label {
+      display: block;
+      margin-top: 0.5rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.3rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Our Sample HTML5 Page</h1>
+    <p>This page demonstrates structured content with HTML5 and a well-crafted form.</p>
+  </header>
+
+  <!-- SECTION 1: Lists -->
+  <section>
+    <h2>Our Services</h2>
+    <ul>
+      <li>Web Development</li>
+      <li>UI/UX Design</li>
+      <li>Content Strategy</li>
+      <li>SEO Optimization</li>
+    </ul>
+
+    <h3>Top 3 Programming Languages</h3>
+    <ol>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>HTML/CSS</li>
+    </ol>
+  </section>
+
+  <!-- SECTION 2: Table -->
+  <section>
+    <h2>Course Schedule</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Course</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>Intro to HTML5</td>
+          <td>10:00 - 12:00</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>CSS Basics</td>
+          <td>13:00 - 15:00</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>JavaScript Essentials</td>
+          <td>10:00 - 12:00</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- SECTION 3: Media -->
+  <section>
+    <h2>Featured Media</h2>
+    <figure>
+      <img src="Nature" alt="Placeholder Image" width="100%">
+      <figcaption>Our workspace inspiration</figcaption>
+    </figure>
+
+    <h3>Intro Audio</h3>
+    <audio controls>
+      <source src=" Host.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Promotional Video</h3>
+    <video controls width="100%">
+      <source src="REAL M.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- SECTION 4: HTML5 Form -->
+  <section>
+    <h2>Contact & Registration Form</h2>
+    <form action="#" method="post" novalidate>
+
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name *</label>
+        <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required placeholder="e.g. you@example.com">
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number">
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+
+        <label for="username">Username *</label>
+        <input type="text" id="username" name="username" required minlength="5" placeholder="Choose a username" autocomplete="username">
+
+        <label for="password">Password *</label>
+        <input type="password" id="password" name="password" required minlength="6" placeholder="Enter a secure password" autocomplete="new-password">
+
+        <label for="confirm">Confirm Password *</label>
+        <input type="password" id="confirm" name="confirm" required minlength="6" placeholder="Retype your password">
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+          <option value="">--Select--</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="bio">Short Bio</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..."></textarea>
+
+        <label>
+          <input type="checkbox" name="newsletter" checked>
+          Subscribe to our newsletter
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Register">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Web Design Samisa Jay Co. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
